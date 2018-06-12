@@ -1,0 +1,23 @@
+# current hostname
+export HOSTNAME="$(hostname)"
+
+# setup system paths
+export PATH="${HOME}/bin:/bin:/usr/local/sbin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin:."
+export MANPATH="/usr/share/man:/usr/local/man"
+export EDITOR='vim'
+export VISUAL='vim'
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+export HISTSIZE=1000
+export HISTFILESIZE=2000
+
+# ignore up to 10 ^D's
+export ignoreeof=10
+# use less to page
+export PAGER='less'
+export TERM=rxvt-unicode-256color
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+
