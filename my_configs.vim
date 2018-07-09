@@ -48,7 +48,7 @@ inoremap <leader>Z <++>
 nnoremap <leader>Z i<++><Esc> 
 nnoremap <leader>ai 0ggvG$=
 
-nnoremap <leader>e :e /home/chuck/Workspace/
+nnoremap <leader>e :e /Users/matt/
 
 
 " Quit

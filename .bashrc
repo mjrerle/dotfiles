@@ -21,4 +21,5 @@ else
     fi
 fi
 
+. "/usr/local/opt/nvm/nvm.sh"
 

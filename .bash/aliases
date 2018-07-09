@@ -3,16 +3,6 @@ alias vi="vim"
 alias ve="vim ~/.vim_runtime/my_configs.vim"
 alias vr="vim ~/.bashrc"
 alias va="vim ~/.bash/aliases"
-alias o="xdg-open"
-
-alias gp="cd /tmp"
-alias gd="cd /home/chuck/Documents"
-alias gD="cd /home/chuck/Downloads"
-alias gw="cd /home/chuck/Workspace"
-alias gr="cd /home/chuck/Documents/resume"
-alias gy="cd /home/chuck/Templates"
-
-alias cpmake="cp ~/Templates/Makefile ."
 
 alias c11="gcc -std=c11"
 
@@ -31,7 +21,6 @@ alias cm="chmod u=rwx"
 
 # Pretty-print of some PATH variables:
 alias path='echo -e ${PATH//:/\\n}'
-alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
 
 alias myip='hostname -I | cut -d" " -f1'
 
@@ -41,15 +30,7 @@ alias df='df -kTh'
 #-------------------------------------------------------------
 # The 'ls' family (this assumes you use a recent GNU ls).
 #-------------------------------------------------------------
-# enable color support of ls and also add handy aliases
-if [ -f ~/.dircolors ]; then
-    eval "`dircolors -b ~/.dircolors`"
-    alias ls='ls --color=auto'
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
-alias ls='ls -hA --color'
+alias ls='ls -hAG'
 alias lx='ls -lXB'         #  Sort by extension.
 alias lk='ls -lSrA'         #  Sort by size, biggest last.
 alias lt='ls -ltr'         #  Sort by date, most recent last.
@@ -57,20 +38,23 @@ alias lc='ls -ltcr'        #  Sort by/show change time,most recent last.
 alias lu='ls -ltur'        #  Sort by/show access time,most recent last.
 
 # The ubiquitous 'll': directories first, with alphanumeric sorting:
-alias ll="ls -lv --group-directories-first"
+alias ll="ls -lv"
 alias lm='ll |more'        #  Pipe through 'more'
 alias lr='ll -R'           #  Recursive ls.
 alias la='ll -A'           #  Show hidden files.
-alias tree='tree -Csuh'    #  Nice alternative to 'recursive ls' ...
 
 alias more='less'
 
-# Aliases that use xtitle
-alias top='xtitle Processes on $HOST && top'
-alias make='xtitle Making $(basename $PWD) ; make'
+# because im lazy
+alias cdd='cd ~/Downloads/'
+alias cdw='cd ~/dev/www/'
+alias cdp='cd wp-content/plugins'
+alias cdt='cd wp-content/themes'
+alias cdwp='cd wp-content'
 
-alias r='ranger'
-alias update_term='xrdb -merge ~/.Xdefaults'
+# because why
+alias popd='popd >/dev/null'
+alias pushd='pushd >/dev/null'
 
-
-
+# because i cant remember simple pwds
+alias mongod='echo "admin pw is manager lol "; mongod --auth'
