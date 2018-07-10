@@ -12,15 +12,17 @@ brew install apache-httpd
 brew install wp-cli
 brew install hugo
 
-composer global require laravel/valet
 git config --global user.name merle
 git clone https://github.com/mjrerle/dotfiles ~/Documents/dotfiles
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
 
 cp -rf ~/Documents/dotfiles/.bash ~/
 cp -rf ~/Documents/dotfiles/.bashrc ~/
 cp -rf ~/Documents/dotfiles/.profile ~/
 
 . ~/.profile
+composer global require laravel/valet
 nvm install 9.11.2
 npm i -g loopback
 npm i -g pm2
