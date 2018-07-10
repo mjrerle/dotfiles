@@ -1,6 +1,5 @@
 #!/bin/bash
 
-brew install git
 brew install vim
 brew install nvm
 brew install mariadb
@@ -13,7 +12,6 @@ brew install wp-cli
 brew install hugo
 
 git config --global user.name merle
-git clone https://github.com/mjrerle/dotfiles ~/Documents/dotfiles
 git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
 sh ~/.vim_runtime/install_awesome_vimrc.sh
 
